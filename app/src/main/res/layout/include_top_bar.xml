@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/bg_transparent" >
+    
+    <ImageView 
+        android:id="@+id/iv_action_bar_back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="13dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_back"/>
+    
+    <TextView
+        android:id="@+id/tv_top_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/list_local"
+        android:textColor="@color/default_text_color"
+        android:textSize="18sp"/>
+    
+    <ImageView 
+        android:id="@+id/iv_action_bar_menu"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/icon_menu"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_action_bar_lyric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_action_bar_menu"
+        android:layout_marginRight="20dp"
+        android:text="@string/action_bar_lyric"
+        android:textColor="@color/default_text_color"
+        android:textSize="18sp"/>
+    
+</RelativeLayout>

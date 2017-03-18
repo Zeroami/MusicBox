@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:orientation="vertical">
+    
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:paddingLeft="8dp"
+		android:paddingRight="8dp"
+		android:background="@drawable/bg_item_music"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:layout_marginRight="10dp"
+			android:gravity="center_vertical"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tv_item_music_title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:marqueeRepeatLimit="marquee_forever"
+				android:text="可惜不是你"
+				android:textColor="@color/default_text_color"
+				android:textSize="18dp"/>
+
+			<TextView
+				android:id="@+id/tv_item_music_artist"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:marqueeRepeatLimit="marquee_forever"
+				android:layout_marginTop="5dp"
+				android:text="梁静茹"
+				android:textColor="@color/default_text_color"
+				android:textSize="16dp"/>
+		</LinearLayout>
+
+		<ImageView
+			android:id="@+id/iv_item_music_action"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center_vertical"
+			android:src="@drawable/icon_arrow_down"/>
+	</LinearLayout>
+
+	<include layout="@layout/include_music_operate"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"></include>
+</LinearLayout>

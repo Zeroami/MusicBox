@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="default_text_color">#ffffffff</color>
+    <color name="hint_text_color">#aaffffff</color>
+    <color name="bg_action_bar">#ff222222</color>
+    <color name="bg_transparent">#33ffffff</color>
+    <color name="bg_content_transparent_normal">#22ffffff</color>
+    <color name="bg_content_transparent_press">#44ffffff</color>
+    <color name="bg_tab_line">#ff0099ff</color>
+    <color name="bg_menu_layout">#ff222222</color>
+    <color name="bg_menu_item">#ff111111</color>
+    <color name="menu_item_divider">#ff333333</color>
+    <color name="selected_text_color">#ff3399ff</color>
+    <color name="seekbar_background">#22ffffff</color>
+    <color name="seekbar_progress">#ff0099ff</color>
+    <color name="bg_popupwindow_play_list">#ff000000</color>
+    <color name="bg_btn_list_operate_normal">#ff0099ff</color>
+    <color name="bg_btn_list_operate_press">#ff0066ff</color>
+    <color name="set_null">#00000000</color>
+    <color name="music_item_click">#330099ff</color>
+    <color name="bg_select_add_list_normal">#ffeeeeee</color>
+    <color name="bg_select_add_list_press">#ffdddddd</color>
+    <color name="top3_text_color">#ffcc0000</color>
+    <color name="scroll_block">#55ffffff</color>
+    <color name="scroll_indicator_tip">#66000000</color>
+    <color name="scroll_indicator_bg">#44000000</color>
+    <color name="bg_list_select_tip">#44000000</color>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:orientation="vertical">
+    
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp">
+
+		<ImageView
+			android:id="@+id/iv_board_image"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_centerVertical="true"
+			android:src="@drawable/icon_app_logo"/>
+
+		<ImageView
+			android:id="@+id/iv_enter_list"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:src="@drawable/icon_forward"/>
+
+		<TextView
+			android:id="@+id/tv_board_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/iv_board_image"
+			android:layout_toLeftOf="@id/iv_enter_list"
+			android:layout_marginLeft="10dp"
+			android:singleLine="true"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:text="新歌榜"
+			android:textColor="@color/default_text_color"
+			android:textSize="18dp"/>
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ly_main_bg"
+    android:background="@drawable/app_blur_bg0">
+
+    <include layout="@layout/include_top_bar"
+        android:id="@+id/ly_list_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <include layout="@layout/include_bottom_bar"
+        android:id="@+id/ly_list_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:id="@+id/ly_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_above="@id/ly_list_bottom_bar"
+        android:layout_below="@id/ly_list_top_bar"
+        android:orientation="vertical" >
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:id="@+id/tv_list_more_action"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_more_action"
+                android:background="@drawable/bg_item_btn"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/tv_list_more_action"
+                android:layout_marginRight="1dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_all_download"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:background="@drawable/bg_item_btn"
+                    android:gravity="center"
+                    android:text="@string/all_download"
+                    android:textSize="16sp"
+                    android:textColor="@color/default_text_color"/>
+
+                <TextView
+                    android:id="@+id/tv_save_to_download_list"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:background="@drawable/bg_item_btn"
+                    android:gravity="center"
+                    android:text="@string/save_to_download_list"
+                    android:textSize="16sp"
+                    android:textColor="@color/default_text_color"/>
+            </LinearLayout>
+        </RelativeLayout>-->
+
+        <com.lzb.musicbox.view.PullUpListView
+            android:id="@+id/lv_music_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:footerDividersEnabled="false"
+            android:divider="@drawable/divider_horizontal">
+        </com.lzb.musicbox.view.PullUpListView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_no_music_tip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ly_list_bottom_bar"
+        android:layout_below="@id/ly_list_top_bar"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/board_no_music_tip"
+        android:textSize="18sp"
+        android:textColor="@color/default_text_color"
+        android:visibility="gone"/>
+</RelativeLayout>

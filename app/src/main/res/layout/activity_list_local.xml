@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:id="@+id/ly_main_bg"
+    android:background="@drawable/app_blur_bg0">
+    
+
+    <include layout="@layout/include_top_bar"
+        android:id="@+id/ly_list_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+   
+    <LinearLayout
+		android:visibility="gone"
+        android:id="@+id/ly_list_top_type" 
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:layout_below="@id/ly_list_top_bar"
+	    android:layout_marginTop="15dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginBottom="5dp"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:id="@+id/tv_type_all_music"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:layout_marginRight="1dp"
+	        android:background="@drawable/bg_item_btn_press"
+	        android:gravity="center"
+	        android:text="@string/type_all_music"
+	        android:textSize="16sp"
+	        android:textColor="@color/default_text_color"/>
+	    
+	    <TextView 
+	        android:id="@+id/tv_type_singer"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:layout_marginRight="1dp"
+	        android:background="@drawable/bg_item_btn"
+	        android:gravity="center"
+	        android:text="@string/type_singer"
+	        android:textSize="16sp"
+	        android:textColor="@color/default_text_color"/>
+	    
+	    <TextView 
+	        android:id="@+id/tv_type_folder"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:layout_marginRight="1dp"
+	        android:background="@drawable/bg_item_btn"
+	        android:gravity="center"
+	        android:text="@string/type_folder"
+	        android:textSize="16sp"
+	        android:textColor="@color/default_text_color"/>
+	</LinearLayout>
+    
+	<include layout="@layout/include_bottom_bar"
+        android:id="@+id/ly_list_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true" />
+
+    <include layout="@layout/include_list_base"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+		android:layout_marginTop="20dp"
+	    android:layout_above="@id/ly_list_bottom_bar"
+	    android:layout_below="@id/ly_list_top_type"/>
+</RelativeLayout>

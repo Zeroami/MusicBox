@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:id="@+id/ly_main_bg"
+    android:background="@drawable/app_blur_bg0">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:background="@color/bg_transparent" >
+
+		<ImageView
+			android:id="@+id/iv_action_bar_back"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:layout_marginLeft="13dp"
+			android:layout_centerVertical="true"
+			android:src="@drawable/icon_back"/>
+
+		<TextView
+			android:id="@+id/tv_top_list_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="@string/menu_change_skin"
+			android:textColor="@color/default_text_color"
+			android:textSize="18sp"/>
+	</RelativeLayout>
+
+	<GridView
+		android:id="@+id/gv_skin_images"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:paddingTop="20dp"
+		android:paddingBottom="20dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:numColumns="3"
+		android:verticalSpacing="20dp"></GridView>
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_menu_layout">
+
+    <TextView
+        android:id="@+id/tv_exit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_exit"
+        android:gravity="center_vertical"
+        android:text="@string/menu_exit"
+        android:textColor="@color/default_text_color"
+        android:textSize="16sp" />
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@id/tv_exit">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+			android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/menu_item_divider"/>
+
+			<TextView
+				android:id="@+id/tv_scan_music"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:paddingLeft="20dp"
+                android:background="@drawable/bg_menu_item_btn"
+                android:gravity="center_vertical"
+                android:clickable="true"
+				android:text="@string/menu_scan_music"
+				android:textColor="@color/default_text_color"
+				android:textSize="16sp" />
+
+			<TextView
+				android:id="@+id/tv_change_skin"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:paddingLeft="20dp"
+                android:background="@drawable/bg_menu_item_btn"
+                android:gravity="center_vertical"
+                android:clickable="true"
+				android:text="@string/menu_change_skin"
+				android:textColor="@color/default_text_color"
+				android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/ly_sleep_mode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_menu_item_btn"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:paddingLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/menu_sleep_mode"
+                    android:textColor="@color/default_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_sleep_mode_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:paddingRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/off"
+                    android:textColor="@color/default_text_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ly_change_language"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_menu_item_btn"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:paddingLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/menu_change_language"
+                    android:textColor="@color/default_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_change_language_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:paddingRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/language_chinese"
+                    android:textColor="@color/default_text_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ly_background_blur"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_menu_item_btn"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:paddingLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/menu_background_blur"
+                    android:textColor="@color/default_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_background_blur_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:paddingRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/on"
+                    android:textColor="@color/default_text_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>

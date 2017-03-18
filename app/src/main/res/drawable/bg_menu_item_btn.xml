@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@color/bg_menu_item"></item>
+    <item android:state_pressed="false">
+        <layer-list>
+            <!-- 连框颜色值 -->
+            <item>
+                <shape>
+                    <solid android:color="@color/menu_item_divider" />
+                </shape>
+            </item>
+            <!-- 主体背景颜色值 -->
+            <item android:bottom="1px">
+                <shape>
+                    <solid android:color="@color/bg_menu_layout" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

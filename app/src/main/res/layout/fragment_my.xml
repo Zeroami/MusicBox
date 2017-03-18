@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+            
+		    <LinearLayout 
+		        android:id="@+id/ly_list_local"
+		        android:layout_width="match_parent"
+		        android:layout_height="60dp"
+		        android:paddingLeft="20dp"
+		        android:paddingRight="20dp"
+		        android:layout_marginTop="20dp"
+		        android:background="@drawable/bg_item_btn"
+		        android:clickable="true"
+		        android:orientation="horizontal">
+		        
+		        <ImageView 
+		            android:layout_width="25dp"
+		            android:layout_height="25dp"
+		            android:layout_gravity="center_vertical"
+		            android:src="@drawable/icon_list_local"/>
+		        
+		        <LinearLayout 
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_marginLeft="20dp"
+		            android:gravity="center_vertical"
+		            android:orientation="vertical">
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/list_local"
+		                android:textColor="@color/default_text_color"
+		                android:textSize="16sp"/>
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="2dp"
+		                android:text="400首歌曲"
+		                android:textColor="@color/default_text_color"
+		                android:textSize="14sp"/>
+		        </LinearLayout>
+		    </LinearLayout>
+		
+		    <!--<LinearLayout -->
+		        <!--android:id="@+id/ly_list_download"-->
+		        <!--android:layout_width="match_parent"-->
+		        <!--android:layout_height="60dp"-->
+		        <!--android:paddingLeft="20dp"-->
+		        <!--android:paddingRight="20dp"-->
+		        <!--android:layout_marginTop="1dp"-->
+		        <!--android:background="@drawable/bg_item_btn"-->
+		        <!--android:clickable="true"-->
+		        <!--android:orientation="horizontal">-->
+		        <!-- -->
+		        <!--<ImageView -->
+		            <!--android:layout_width="25dp"-->
+		            <!--android:layout_height="25dp"-->
+		            <!--android:layout_gravity="center_vertical"-->
+		            <!--android:src="@drawable/icon_list_download"/>-->
+		        <!-- -->
+		        <!--<LinearLayout -->
+		            <!--android:layout_width="match_parent"-->
+		            <!--android:layout_height="match_parent"-->
+		            <!--android:layout_marginLeft="20dp"-->
+		            <!--android:gravity="center_vertical"-->
+		            <!--android:orientation="vertical">-->
+		            <!-- -->
+		            <!--<TextView -->
+		                <!--android:layout_width="wrap_content"-->
+		                <!--android:layout_height="wrap_content"-->
+		                <!--android:text="@string/list_download"-->
+		                <!--android:textColor="@color/default_text_color"-->
+		                <!--android:textSize="16sp"/>-->
+		            <!-- -->
+		            <!--<TextView -->
+		                <!--android:layout_width="wrap_content"-->
+		                <!--android:layout_height="wrap_content"-->
+		                <!--android:layout_marginTop="2dp"-->
+		                <!--android:text="400首歌曲"-->
+		                <!--android:textColor="@color/default_text_color"-->
+		                <!--android:textSize="14sp"/>-->
+		        <!--</LinearLayout>-->
+		    <!--</LinearLayout>-->
+		    
+		     <LinearLayout 
+		         android:id="@+id/ly_list_container"
+		         android:layout_width="match_parent"
+				 android:layout_height="wrap_content"
+				 android:paddingTop="20dp"
+				 android:orientation="vertical">
+		    </LinearLayout>
+
+		    <LinearLayout
+		        android:id="@+id/ly_list_add"
+		        android:layout_width="match_parent"
+		        android:layout_height="60dp"
+		        android:paddingLeft="20dp"
+		        android:paddingRight="20dp"
+		        android:layout_marginTop="20dp"
+		        android:gravity="center"
+		        android:background="@drawable/bg_item_btn"
+		        android:clickable="true"
+		        android:orientation="horizontal">
+		        
+		        <ImageView 
+		            android:layout_width="25dp"
+		            android:layout_height="25dp"
+		            android:src="@drawable/icon_add"/>
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="20dp"
+		            android:text="@string/list_add"
+		            android:textColor="@color/default_text_color"
+		            android:textSize="20sp"/>
+		     </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ly_main_bg"
+    android:background="@drawable/app_blur_bg0">
+
+    <RelativeLayout 
+        android:id="@+id/ly_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_action_bar" >
+        
+        <ImageView 
+            android:id="@+id/iv_action_bar_logo"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_app_logo"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_action_bar_logo"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name"
+            android:textColor="@color/default_text_color"
+            android:textSize="18sp"/>
+        
+        <ImageView 
+            android:id="@+id/iv_action_bar_menu"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_menu"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_action_bar_lyric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_action_bar_menu"
+            android:layout_marginRight="20dp"
+            android:text="@string/action_bar_lyric"
+            android:textColor="@color/default_text_color"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ly_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ly_action_bar"
+        android:background="@color/bg_transparent"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:id="@+id/tv_nav_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/nav_my_music"
+            android:textColor="@color/default_text_color"
+            android:textSize="18sp"/>
+        
+
+        <TextView 
+            android:id="@+id/tv_nav_net"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/nav_net_music"
+            android:textColor="@color/default_text_color"
+            android:textSize="18sp"/>
+        
+        <TextView 
+            android:id="@+id/tv_nav_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/nav_search"
+            android:textColor="@color/default_text_color"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/iv_nav_tab_line"
+        android:layout_width="100dp"
+        android:layout_height="4dp"
+        android:layout_below="@+id/ly_nav_bar"
+        android:layout_marginTop="-4dp"
+        android:background="@color/bg_tab_line"/>
+    
+    <include layout="@layout/include_bottom_bar"
+        android:id="@+id/ly_main_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true" />
+
+    <android.support.v4.view.ViewPager  
+        android:id="@+id/vp_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ly_nav_bar"
+        android:layout_above="@id/ly_main_bottom_bar" /> 
+</RelativeLayout>
